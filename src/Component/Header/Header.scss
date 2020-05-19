@@ -1,4 +1,4 @@
-@import '../../Styles/_variables.scss';
+@import '../../Styles/_globalVariables.scss';
 @import './_animations';
 
 
@@ -10,13 +10,13 @@
     /* this sets the image within the header only no mater the size  */
     background-size: cover;
     /* sets the image height to 90% of view height - screen height */
-    height: 90vh;
+    height: 95vh;
     /* this retains the top of the image and crops the bottom in when viewed on mobile  */
     /* center - retains the center of image 
     bottom - retains the bottom of image and crops top */
     background-position: top;
     /* clip a element in a shape of a polygon, can have multiple shapes and multiple points  */
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     /* arrow shape  https://bennettfeely.com/clippy/ */
     /* clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); */
     /* triangle  */
@@ -105,7 +105,7 @@
 
         /* simple animation to move button as per css transoform set below, ie hover and active 
         always set on default of the element*/
-        transition: all .2s;
+        // transition: all .2s;
         position: relative;
         font-size: 1.6rem;
 
@@ -127,6 +127,9 @@
 
     &:hover {
         transform: translateY(-.3rem);
+
+        background-position: left;
+
 
         /* box shadow property to show the user a black shadow below the button on hover 
         first prop - 0 - x axix box-shadow ; 

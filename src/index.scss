@@ -1,5 +1,13 @@
-*/
-remove default style like border padding and margin from all elements 
+@import '../src/Styles/globalVariables.scss';
+@import '../src/Styles/globalMixins';
+@import '../src/Styles/globalGrid.scss';
+@import '../src/Styles/util.scss';
+
+
+
+/*
+remove default style like border padding and margin from all elements */
+
 *,
 *::after,
 *::before {

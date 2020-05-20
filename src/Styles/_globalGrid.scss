@@ -1,0 +1,25 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    // apply the margin for all the row - last child
+    &:not(:last-child) {
+        margin-bottom: $grid-margin-bottom;
+    }
+
+    @include clearfix;
+
+    .col-1-of-2 {
+        background-color: black;
+        height: 1rem;
+        width: calc((100% - #{$grid-margin-right}) / 2);
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $grid-margin-right;
+        }
+    }
+    
+    
+}
+

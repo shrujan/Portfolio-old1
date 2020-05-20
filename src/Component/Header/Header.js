@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import logoWhite from '../../Assets/Img/logo-white.png';
-import Aux from '../../HOC/Aux';
+import Aux from '../../HOC/Auxilary';
 import addHeader from '../../HOC/addHeader';
 
 const Header = () => {

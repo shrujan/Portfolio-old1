@@ -12,9 +12,12 @@ const About = (props) => {
                 </div>
                 <div className="row">
                     <div className="col-1-of-2 about-section__details">
-                        <p>I am a web developer with over 6+ years of Experience in Front End Development</p>
+                        <h3 className="who-am-i">Who am I</h3>
+                        <p className="description">I am a web developer with over 6+ years of Experience in Front End Development</p>
                     </div>
-                    <div className="col-1-of-2"></div>
+                    <div className="col-1-of-2">
+                        
+                    </div>
                 </div>
             </section> 
         </main>

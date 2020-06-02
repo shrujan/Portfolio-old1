@@ -10,7 +10,7 @@
     @include clearfix;
 
     .col-1-of-2 {
-        background-color: black;
+        // background-color: black;
         height: 1rem;
         width: calc((100% - #{$grid-margin-right}) / 2);
         float: left;

@@ -1,5 +1,6 @@
 @import '../../index.scss';
 
+$font-size: 1.6rem;
 
 .about-section {
     background-color: $color-light-grey;
@@ -23,7 +24,7 @@
 
         letter-spacing: .2rem;
         // effect look smoother
-        transition: all .5 ease;
+        transition: all .9 ease-in;
 
         // effect on hover
         &:hover {
@@ -41,10 +42,32 @@
     }
 
     &__details {
-        font-size: 2.5rem;
-        font-weight: 400;
-        letter-spacing: .2rem;
-        color: #fff;
+     
+       .heading-tertiary {
+           font-size: $font-size;
+           font-weight: 700;
+           text-transform: uppercase;
+       }
+
+       .description {
+           font-size: $font-size;
+           &:not(:lastChild) {
+               margin-bottom: 3rem;
+           }
+
+       }
+
+      
+    }
+
+    &__contact {
+        font-size: $font-size;
+        .contact-option {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+        }
     }
 
 
